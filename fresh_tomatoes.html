@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fresh Tomatoes!</title>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/star-rating.min.css" media="all" rel="stylesheet" type="text/css" />
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    
+    <!-- jquery star rating plugin from Krajee (http://plugins.krajee.com/star-rating) -->
+    <script src="js/star-rating.min.js"></script>
+
+    <!-- javascript code to display trailer and star ratings -->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+<!-- Trailer Video Modal -->
+<div class="modal" id="trailer">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+                <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+            </a>
+
+            <div class="scale-media" id="trailer-video-container">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Page Content -->
+<div class="container">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+		
+        <div class="col-lg-4 col-md-6 movie-tile text-center" data-toggle="modal" data-trailer-youtube-id="XYGzRB4Pnq8" data-target="#trailer">
+        	<div class="movie_poster">
+                <img src="http://www.scifi-movies.com/images/contenu/data/0004530 /affiche-ex-machina-2015-5.jpg" style="width:340px;margin:0px">
+            </div>
+            <div class="movie_label">
+                <h4>Ex Machina (2015)</h4>
+                <p class="text-justify">Caleb Smith (Domhnall Gleeson) a programmer at a huge Internet company, wins a contest that enables him to spend a week at the private estate of Nathan Bateman (Oscar Isaac), his firm's brilliant CEO. When he arrives, Caleb learns that he has been chosen to be the human component in a Turing test to determine the capabilities and consciousness of Ava (Alicia Vikander), a beautiful robot. However, it soon becomes evident that Ava is far more self- aware and deceptive than either man imagined.</p>
+                <!-- table to show star-rating -->
+                <table style="margin:auto; font-size:0.75em">
+				  <tr>
+				    <td style="padding-right:2px; font-size:1em">
+				      IMDB:
+				    </td>
+				    <td style="padding-top:-15px">
+				      <input class="input-3" name="input-3" value="7.7" data-size="xs" class="rating rating-loading">
+				    </td>
+				  </tr>
+				</table>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 movie-tile text-center" data-toggle="modal" data-trailer-youtube-id="Wzii8IuL8lk" data-target="#trailer">
+        	<div class="movie_poster">
+                <img src="https://upload.wikimedia.org/wikipedia/en/b/b6/Pretty_woman_movie.jpg" style="width:340px;margin:0px">
+            </div>
+            <div class="movie_label">
+                <h4>Pretty Woman (1990)</h4>
+                <p class="text-justify">In this modern update on Cinderella, a prostitute and a wealthy businessman fall hard for one another, forming an unlikely pair. While on a business trip in L.A., Edward (Richard Gere), who makes a living buying and breaking up companies, picks up a hooker, Vivian (Julia Roberts), on a lark. After Edward hires Vivian to stay with him for the weekend, the two get closer, only to discover there are significant hurdles to overcome as they try to bridge the gap between their very different worlds.</p>
+                <!-- table to show star-rating -->
+                <table style="margin:auto; font-size:0.75em">
+				  <tr>
+				    <td style="padding-right:2px; font-size:1em">
+				      IMDB:
+				    </td>
+				    <td style="padding-top:-15px">
+				      <input class="input-3" name="input-3" value="6.9" data-size="xs" class="rating rating-loading">
+				    </td>
+				  </tr>
+				</table>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 movie-tile text-center" data-toggle="modal" data-trailer-youtube-id="lwSysg9o7wE" data-target="#trailer">
+        	<div class="movie_poster">
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/85/Terminator2poster.jpg" style="width:340px;margin:0px">
+            </div>
+            <div class="movie_label">
+                <h4>Terminator (1991)</h4>
+                <p class="text-justify">In this sequel set eleven years after The Terminator, young John Connor (Edward Furlong), the key to civilization's victory over a future robot uprising, is the target of the shape-shifting T-1000 (Robert Patrick), a Terminator sent from the future to kill him. Another Terminator, the revamped T-800 (Arnold Schwarzenegger), has been sent back to protect the boy. As John and his mother (Linda Hamilton) go on the run with the T-800, the boy forms an unexpected bond with the robot.</p>
+                <!-- table to show star-rating -->
+                <table style="margin:auto; font-size:0.75em">
+				  <tr>
+				    <td style="padding-right:2px; font-size:1em">
+				      IMDB:
+				    </td>
+				    <td style="padding-top:-15px">
+				      <input class="input-3" name="input-3" value="8.5" data-size="xs" class="rating rating-loading">
+				    </td>
+				  </tr>
+				</table>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 movie-tile text-center" data-toggle="modal" data-trailer-youtube-id="Z5jvQwwHQNY" data-target="#trailer">
+        	<div class="movie_poster">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Vertigomovie_restoration.jpg" style="width:340px;margin:0px">
+            </div>
+            <div class="movie_label">
+                <h4>Vertigo (1958)</h4>
+                <p class="text-justify">Hitchcock's romantic story of obsession, manipulation and fear. A detective is forced to retire after his fear of heights causes the death of a fellow officer and the girl he was hired to follow. He sees a double of the girl, causing him to transform her image onto the dead girl's body. This leads into a cycle of madness and lies.</p>
+                <!-- table to show star-rating -->
+                <table style="margin:auto; font-size:0.75em">
+				  <tr>
+				    <td style="padding-right:2px; font-size:1em">
+				      IMDB:
+				    </td>
+				    <td style="padding-top:-15px">
+				      <input class="input-3" name="input-3" value="8.4" data-size="xs" class="rating rating-loading">
+				    </td>
+				  </tr>
+				</table>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 movie-tile text-center" data-toggle="modal" data-trailer-youtube-id="rrRl2QQKkI8" data-target="#trailer">
+        	<div class="movie_poster">
+                <img src="http://www.gstatic.com/tv/thumb/dvdboxart/20351/p20351_d_v8_aa.jpg" style="width:340px;margin:0px">
+            </div>
+            <div class="movie_label">
+                <h4>As Good As It Gets (1997)</h4>
+                <p class="text-justify">Melvin Udall (Jack Nicholson) is an obsessive-compulsive writer of romantic fiction who's rude to everyone he meets, including his gay neighbor Simon (Greg Kinnear), but when he has to look after Simon's dog, he begins to soften and, if still not completely over his problems, finds he can conduct a relationship with the only waitress (Helen Hunt) at the local diner who'll serve him.</p>
+                <!-- table to show star-rating -->
+                <table style="margin:auto; font-size:0.75em">
+				  <tr>
+				    <td style="padding-right:2px; font-size:1em">
+				      IMDB:
+				    </td>
+				    <td style="padding-top:-15px">
+				      <input class="input-3" name="input-3" value="7.7" data-size="xs" class="rating rating-loading">
+				    </td>
+				  </tr>
+				</table>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 movie-tile text-center" data-toggle="modal" data-trailer-youtube-id="sU0oZsqeG_s" data-target="#trailer">
+        	<div class="movie_poster">
+                <img src="http://www.gstatic.com/tv/thumb/movieposters/32966/p32966_p_v8_ag.jpg" style="width:340px;margin:0px">
+            </div>
+            <div class="movie_label">
+                <h4>Lost in Translation (2003)</h4>
+                <p class="text-justify">A lonely, aging movie star named Bob Harris (Bill Murray) and a conflicted newlywed, Charlotte (Scarlett Johansson), meet in Tokyo. Bob is there to film a Japanese whiskey commercial; Charlotte is accompanying her celebrity-photographer husband. Strangers in a foreign land, the two find escape, distraction and understanding amidst the bright Tokyo lights after a chance meeting in the quiet lull of the hotel bar. They form a bond that is as unlikely as it is heartfelt and meaningful.</p>
+                <!-- table to show star-rating -->
+                <table style="margin:auto; font-size:0.75em">
+				  <tr>
+				    <td style="padding-right:2px; font-size:1em">
+				      IMDB:
+				    </td>
+				    <td style="padding-top:-15px">
+				      <input class="input-3" name="input-3" value="7.8" data-size="xs" class="rating rating-loading">
+				    </td>
+				  </tr>
+				</table>
+            </div>
+        </div>
+        
+</div>
+
+</body>
+</html>

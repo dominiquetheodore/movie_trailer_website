@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fresh Tomatoes!</title>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/star-rating.min.css" media="all" rel="stylesheet" type="text/css" />
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    
+    <!-- jquery star rating plugin from Krajee (http://plugins.krajee.com/star-rating) -->
+    <script src="js/star-rating.min.js"></script>
+
+    <!-- javascript code to display trailer and star ratings -->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+<!-- Trailer Video Modal -->
+<div class="modal" id="trailer">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+                <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+            </a>
+
+            <div class="scale-media" id="trailer-video-container">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Page Content -->
+<div class="container">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+		{% for movie in movies %}
+        <div class="col-lg-4 col-md-6 movie-tile text-center" data-toggle="modal" data-trailer-youtube-id="{{ movie.trailer_youtube_id() }}" data-target="#trailer">
+        	<div class="movie_poster">
+                <img src="{{movie.poster_image_url }}" style="width:340px;margin:0px">
+            </div>
+            <div class="movie_label">
+                <h4>{{ movie.title}} ({{ movie.release_year }})</h4>
+                <p class="text-justify">{{ movie.storyline }}</p>
+                <!-- table to show star-rating -->
+                <table style="margin:auto; font-size:0.75em">
+				  <tr>
+				    <td style="padding-right:2px; font-size:1em">
+				      IMDB:
+				    </td>
+				    <td style="padding-top:-15px">
+				      <input class="input-3" name="input-3" value="{{ movie.star_rating }}" data-size="xs" class="rating rating-loading">
+				    </td>
+				  </tr>
+				</table>
+            </div>
+        </div>
+        {% endfor %}
+</div>
+
+</body>
+</html>
